@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tagi edycji</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .article {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="article">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Hh_se2Zqsdk?si=5sOvB2ZzxVXquDUV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h1>Obsługa zdjęć i ich przeróbka</h1>
+        <p>
+            W HTML możesz bez problemu obsługiwać zdjęcia i filmy, o czym mogłeś/aś się przekonać wcześniej (kat. Multimedia). Tutaj dowiesz się o podstawowej obsłudze zdjęć:
+        </p>
+    </div>
+
+    <div class="article">
+        <h2>&lt;img&gt;</h2>
+        <p>Tag do wyświetlania obrazów na stronie internetowej.</p>
+        <img src="/static/obraz.jpg" alt="Opis obrazu">
+    </div>
+    
+    <div class="article">
+        <h2>&lt;picture&gt;</h2>
+        <p>Tag używany do dostosowywania obrazów do różnych rozmiarów ekranu i urządzeń.</p>
+        <picture>
+            <source media="(min-width: 800px)" srcset="duzy-obraz.jpg">
+            <img src="/static/picture.jpg" alt="Opis obrazu">
+        </picture>
+    </div>
+    
+    <div class="article">
+        <h2>&lt;canvas&gt;</h2>
+        <p>Tag do tworzenia rysunków i animacji przy użyciu języka JavaScript.</p>
+        <canvas id="moj-canvas" width="200" height="100"></canvas>
+    </div>
+    
+    <div class="article">
+        <h2>&lt;svg&gt;</h2>
+        <p>Tag do tworzenia grafiki wektorowej skalowalnej.</p>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+        </svg>
+    </div>
+    
+    <div class="article">
+        <h2>&lt;object&gt;</h2>
+        <p>Tag do osadzania różnych rodzajów treści, takich jak animacje lub aplikacje.</p>
+    </div>
+    
+    <div class="article">
+        <h2>&lt;embed&gt;</h2>
+        <p>Tag do osadzania różnych treści multimedialnych na stronie internetowej.</p>
+        <embed src="/static/Film.mp4" width="300" height="200" />
+    </div>
+    
+    <div class="article">
+        <h2>&lt;iframe&gt;</h2>
+        <p>Tag do osadzania innych stron internetowych lub treści multimedialnych.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/A2c1f4FE8cY?si=SPcdxs7EFlf_tZXR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    
+    <div class="article">
+        <h2>&lt;map&gt;</h2>
+        <p>Tag używany razem z &lt;area&gt; do tworzenia interaktywnych map obrazów.</p>
+    </div>
+    
+    <div class="article">
+        <h2>&lt;bgsound&gt;</h2>
+        <p>Tag używany do odtwarzania dźwięku w tle na stronie internetowej (starszy sposób).</p>
+        <bgsound src="/static/muzyka.mp3">
+    </div>
+    
+    <div class="article">
+        <h2>&lt;marquee&gt;</h2>
+        <p>Tag do tworzenia animowanych napisów przewijających się po stronie (również starszy sposób).</p>
+        <marquee behavior="scroll" direction="left">Tekst przewijający się</marquee>
+    </div>
+    
+    <div class="article">
+        <h2>&lt;wbr&gt;</h2>
+        <p>Tag do określenia miejsc, w których można dokonać podziału słów w tekście, co jest przydatne przy wyświetlaniu długich URL-ów lub adresów email.</p>
+        <p>To jest długiURLadresEmail@example.com, a to jest długiTekstKtóryMożeByćPodzielony.</p>
+    </div>
+</body>
+</html>    

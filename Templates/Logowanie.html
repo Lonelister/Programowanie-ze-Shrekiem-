@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logowanie</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+<body style="background-image: url('/media/_d0f9bc1d-acab-44e8-9e54-d0c70e4c8d68.jpg');">
+    <div class="login-container">
+        <h1>Witaj w Duloc!</h1>
+        <p>Proszę wprowadź sekretny login i hasło:</p>
+        <form id="login-form" method="post" action="{{ url_for('inbox') }}">
+            <label for="username">Login:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Hasło:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Zaloguj</button>
+        </form>
+    </div>
+
+    <div id="notification" class="notification">
+        <p><strong>Użytkownik ShrekTheMistrz</strong> cię obserwuje i chce wysłać wiadomość: <a href="{{ url_for('inbox') }}" style="color: blue; font-style: italic;">kliknij tutaj</a></p>
+    </div>
+
+    <script>
+        // Możesz zostawić JavaScript bez zmian.
+        const loginForm = document.getElementById("login-form");
+        const notification = document.getElementById("notification");
+
+        loginForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (username === "ShrekTheMistrz" && password === "Shrek3rator!") {
+                notification.style.display = "block";
+            } else {
+                alert("Nieprawidłowy login lub hasło. Spróbuj ponownie.");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tagi multimedialne</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .article {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="article">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BBHQGNkOb5w?si=KF8j3eZzgCRgLrPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h1>Obsługa multimediów</h1>
+        <p>
+            W HTML możesz obsługiwać obrazy, filmy, pliki dźwiękowe, to wszystko nazywane jest multimediami. W tej sekcji nauczysz się obsługi multimediów!
+        </p>
+    </div>
+    
+    <div class="article">
+        <h2>&lt;img&gt;</h2>
+        <p>Tag do wyświetlania obrazów na stronie internetowej.</p>
+        <img src="/static/picture.jpg" alt="Opis obrazu" width="140" height="80">
+    </div>
+    
+    <div class="article">
+        <h2>&lt;audio&gt;</h2>
+        <p>Tag do odtwarzania plików dźwiękowych, takich jak muzyka lub podcasty.</p>
+        <audio controls>
+            <source src="/static/muzyka.mp3" type="audio/mpeg">
+            Twoja przeglądarka nie obsługuje odtwarzacza audio.
+        </audio>
+    </div>
+    
+    <div class="article">
+        <h2>&lt;video&gt;</h2>
+        <p>Tag do odtwarzania plików wideo.</p>
+        <video controls width="320">
+            <source src="/static/Film.mp4" type="video/mp4">
+            Twoja przeglądarka nie obsługuje odtwarzacza wideo.
+        </video>
+    </div>
+    
+    <div class="article">
+        <h2>&lt;iframe&gt;</h2>
+        <p>Tag do osadzania innych stron internetowych lub treści multimedialnych.</p>
+        <iframe src="https://youtu.be/A2c1f4FE8cY?si=SPcdxs7EFlf_tZXR" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <div class="article">
+        <h2>&lt;object&gt;</h2>
+        <p>Tag do osadzania różnych rodzajów treści, takich jak animacje lub aplikacje.</p>
+    </div>
+    
+    <div class="article">
+        <h2>&lt;canvas&gt;</h2>
+        <p>Tag do tworzenia rysunków i animacji przy użyciu języka JavaScript.</p>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;"></canvas>
+    </div>
+    
+    <div class="article">
+        <h2>&lt;svg&gt;</h2>
+        <p>Tag do tworzenia grafiki wektorowej skalowalnej.</p>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
+        </svg>
+    </div>
+    
+    <div class="article">
+        <h2>&lt;map&gt;</h2>
+        <p>Tag używany razem z &lt;area&gt; do tworzenia interaktywnych map obrazów.</p>
+    </div>
+    
+    <div class="article">
+        <h2>&lt;track&gt;</h2>
+        <p>Tag używany wewnątrz &lt;video&gt; i &lt;audio&gt; do dostarczania napisów lub ścieżek dźwiękowych.</p>
+    </div>
+    
+    <div class="article">
+        <h2>&lt;applet&gt;</h2>
+        <p>Tag używany do osadzania aplikacji Java na stronie internetowej (również starszy sposób).</p>
+    </div>
+    
+    <div class="article">
+        <h2>&lt;param&gt;</h2>
+        <p>Tag używany wewnątrz &lt;object&gt; i &lt;applet&gt; do przekazywania parametrów do osadzonej treści.</p>
+    </div>
+    
+    
